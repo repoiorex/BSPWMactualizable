@@ -50,9 +50,9 @@ ruta=$(pwd)
 #cp -p sxhkdrc ~/.config/sxhkd/
 
 #copiar carpeta scrip
-cd  $ruta/Config/bspwm
+#cd  $ruta/Config/bspwm
 
-cp -r scripts /home/bellze/.config/bspwm/
+#cp -r scripts /home/bellze/.config/bspwm/
 
 #instalar kitty
 #sudo apt install kitty -y
@@ -76,6 +76,39 @@ cp -r scripts /home/bellze/.config/bspwm/
 #instalar rofi
 #una ves ya instalado todo en el archivo de sxhkdrc cambiar el comando de teclas y la direccion
 #sudo apt install rofi
+
+# instalar 7z
+
+#sudo apt install p7zip-full
+
+#instalar nerd fonts
+#sudo su
+#cd  $ruta/Config/
+#sudo cp -r fonts /usr/local/share/
+#cd /usr/local/share/fonts/
+#sudo 7z x Hack.zip
+#sudo rm Hack.zip 
+#sudo rm LICENSE.md 
+#sudo rm README.md
+
+#install zsh
+#sudo apt install zsh -y
+
+#instalar ultima version kitty, siempre actualizar paquete desde la git y escoger la que dice amd 64 binary bundle, removeremos la kitty instalada para poner la ultima vercion
+
+#cd /opt/
+#sudo apt remove kitty -y //Se queda asi ya que no se elimina nada porque no se instala una kitty anterior
+#sudo mv $ruta/kitty/kitty-0.35.2-x86_64.txz /opt/ 
+#sudo 7z x kitty-0.35.2-x86_64.txz
+#sudo rm kitty-0.35.2-x86_64.txz
+#sudo mkdir kitty
+#sudo mv kitty-0.35.2-x86_64.tar kitty
+#cd /opt/kitty/
+#sudo tar -xf kitty-0.35.2-x86_64.tar 
+#sudo rm kitty-0.35.2-x86_64.tar 
+#./kitty --version
+
+
 
 
 # Actualizando el sistema despues de instalacion
