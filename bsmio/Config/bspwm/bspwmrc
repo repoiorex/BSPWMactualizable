@@ -24,10 +24,10 @@ bspc rule -a Screenkey manage=off
 
 
 # WALLPAPER
-feh --bg-fill ~/Wallpaper/s4vitar.png
+/usr/bin/feh --bg-fill /home/bellze/fondo/yuji-itadori-1920x1080-9268-222611746.jpg & 
 
 # POLYBAR
-~/.config/polybar/launch.sh
+~/.config/polybar/launch.sh &
 
 # CUSTOM
 bspc config focus_follows_pointer true

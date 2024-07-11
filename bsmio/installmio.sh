@@ -108,8 +108,38 @@ ruta=$(pwd)
 #sudo rm kitty-0.35.2-x86_64.tar 
 #./kitty --version
 
+#copiar archivo color y conf de kitty para los atajos y colo de la terminal
+
+#cd  $ruta/Config/kitty
+#cp -p color.ini  ~/.config/kitty
+#cp -p kitty.conf ~/.config/kitty
+
+#copiar los archivos kitty para que los tenga en user  root
+#sudo cp -rv $ruta/Config/kitty /root/.config/
+
+# instalar visualizador de imagenes
+
+#sudo apt install imagemagick -y
+#sudo apt install feh -y
+
+#configurar fondo
+#cd  $ruta/
+#sudo cp -r fondo /home/bellze/
+#cd /home/bellze/fondo/
+#feh --bg-fill yuji-itadori-1920x1080-9268-222611746.jpg 
+
+#clonar repositorio para poly	
+#cd ~/github
+#git clone https://github.com/VaughnValle/blue-sky.git
+#cd ~/github/blue-sky/polybar
+#cp -r * ~/.config/polybar
+#sudo cp fonts/* /usr/share/fonts/truetype/
+#sudo fc-cache -v
 
 
+#configuracion de picom
+#cd  $ruta/Config
+#cp -r picom ~/.config/
 
 # Actualizando el sistema despues de instalacion
 
@@ -118,4 +148,3 @@ ruta=$(pwd)
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #utiliar este comando ya al finalizar toda la instalacion
 #kill -9 -1
-
