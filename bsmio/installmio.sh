@@ -7,16 +7,15 @@ fi
 ruta=$(pwd)
 
 # Actualizando el sistema
-
 sudo parrot-upgrade
 
 # Instalando dependencias de Entorno
-
 sudo apt install -y build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 
+#instalar make
+sudo apt install cmake
 
 # Creando carpeta de Reposistorios
-
 mkdir ~/github
 
 # clonar repositorios de bspwm y sxhkd
@@ -59,11 +58,9 @@ sudo apt install polybar -y
 sudo apt install libconfig-dev libdbus-1-dev libegl-dev libev-dev libgl-dev libepoxy-dev libpcre2-dev libpixman-1-dev libx11-xcb-dev libxcb1-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-image0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-util-dev libxcb-xfixes0-dev meson ninja-build uthash-dev -y
 
 #clonar el picom
-#utilizar si no te corre con la instalacion de los paquetes de arriba sudo apt install cmake
-sudo apt install cmake
 cd ~/github
 git clone https://github.com/yshui/picom
-cd picom/ 
+cd ~/github/picom/ 
 meson setup --buildtype=release build
 ninja -C build
 ninja -C build install
@@ -79,7 +76,7 @@ sudo apt install p7zip-full
 cd  $ruta/Config/
 sudo cp -r fonts /usr/local/share/
 cd /usr/local/share/fonts/
-7z x Hack.zip
+sudo 7z x Hack.zip
 sudo rm Hack.zip 
 sudo rm LICENSE.md 
 sudo rm README.md
@@ -98,7 +95,7 @@ sudo mv kitty-0.35.2-x86_64.tar kitty
 cd /opt/kitty/
 sudo tar -xf kitty-0.35.2-x86_64.tar 
 sudo rm kitty-0.35.2-x86_64.tar 
-./kitty --version
+#./kitty --version
 
 #copiar archivo color y conf de kitty para los atajos y colo de la terminal
 cd  $ruta/Config/kitty
