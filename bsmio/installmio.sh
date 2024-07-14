@@ -91,7 +91,7 @@ sudo apt install zsh -y
 cd /opt/
 sudo apt remove kitty -y //Se queda asi ya que no se elimina nada porque no se instala una kitty anterior
 sudo mv $ruta/kitty/kitty-0.35.2-x86_64.txz /opt/ 
-7z x kitty-0.35.2-x86_64.txz
+sudo 7z x kitty-0.35.2-x86_64.txz
 sudo rm kitty-0.35.2-x86_64.txz
 sudo mkdir kitty
 sudo mv kitty-0.35.2-x86_64.tar kitty
@@ -115,8 +115,8 @@ sudo apt install feh -y
 #configurar fondo
 cd  $ruta/
 sudo cp -r fondo /home/bellze/
-cd /home/bellze/fondo/
-feh --bg-fill yuji-itadori-1920x1080-9268-222611746.jpg 
+sudo cd /home/bellze/fondo/
+sudo feh --bg-fill yuji-itadori-1920x1080-9268-222611746.jpg 
 
 #clonar repositorio para poly	
 cd ~/github
