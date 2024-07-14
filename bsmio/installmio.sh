@@ -48,7 +48,7 @@ cp -p sxhkdrc ~/.config/sxhkd/
 #copiar carpeta scrip
 cd  $ruta/Config/bspwm
 cp -r scripts /home/bellze/.config/bspwm/
-
+sudo apt install bspwm
 #instalar kitty
 #sudo apt install kitty -y
 
