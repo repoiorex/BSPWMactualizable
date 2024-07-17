@@ -4,6 +4,3 @@
 #cd BSPWMparrot
 #chmod +x install.sh
 #./install.sh
-
-#nota para los scrips de ethetnet
-validar como se llama su adaptador de red para que lo configuren en el scrip
