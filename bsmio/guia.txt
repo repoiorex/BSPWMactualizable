@@ -4,3 +4,5 @@
 #cd BSPWMparrot
 #chmod +x install.sh
 #./install.sh
+
+vim.opt.listchars = "tab:»·,trail:·"
